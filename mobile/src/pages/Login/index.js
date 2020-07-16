@@ -53,11 +53,11 @@ export default function Login() {
     Animated.parallel([
       Animated.timing(logo.x, {
         toValue: 200,
-        duration: 500,
+        duration: 100,
       }),
       Animated.timing(logo.y, {
         toValue: 200,
-        duration: 500,
+        duration: 100,
       }),
     ]).start();
     
@@ -119,39 +119,31 @@ export default function Login() {
             style={styles.btnSubmit}
             onPress={() => alert(windowWidth + ' h: ' + windowHeight)}    
         >
-          <Text style={styles.submitText}>Acessar</Text>
+          <Text style={styles.btnSubmitText}>Acessar</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           style={styles.btnRegister}
           onPress={() => {}}
         >
-            <Text style={styles.RegisterText}>Criar conta</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          style={styles.btnRegister}
-          onPress={() => {}}
-        >
+            <Text style={styles.btnRegisterText}>Criar conta</Text>
         </TouchableOpacity>
         
-        <View style={{flex: 1, width: '60%', flexDirection: 'column', justifyContent: 'space-evenly'}}>
-          <View style={{flexDirection: 'row',marginBottom: 10}}>
-            <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center'}}>
-              {/* <Image style={{width: 20, height: 20}} source={require('../../assets/logo_facebook.png')}/> */}
-              <Text style={{color: '#FFF',}}>Conecte-se com o Facebook</Text>
-            </TouchableOpacity>
+        <TouchableOpacity 
+          style={styles.btnLoginFacebook}
+          onPress={() => {}}  
+        >
+          <Text style={styles.btnLoginFacebookText}>Conecte-se com o Facebook</Text>
+        </TouchableOpacity>
 
-          </View>
-          <View style={{flexDirection: 'row'}}>
-            <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center'}}>
-              {/* <Image style={{width: 20, height: 20}} source={require('../../assets/logo_google.jpg')}/> */}
-              <Text style={{color: '#FFF',}}>Conecte-se com o Google</Text>
-            </TouchableOpacity>
+        <TouchableOpacity 
+          style={styles.btnLoginGoogle}
+          onPress={() => {}}>
+          <Text style={styles.btnLoginGoogleText}>Conecte-se com o Google</Text>
+        </TouchableOpacity>
 
-          </View>
 
-        </View>
+     
         
             
 

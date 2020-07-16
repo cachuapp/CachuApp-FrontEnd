@@ -36,7 +36,7 @@ export default StyleSheet.create({
       padding: 20,
       marginTop: 5,
     },
-    submitText: {
+    btnSubmitText: {
       color: '#FFF',
       fontSize: 18,
       //fontWeight: 'bold'
@@ -44,9 +44,23 @@ export default StyleSheet.create({
     btnRegister: {
       marginTop: 10,
     },
-    RegisterText: {
+    btnRegisterText: {
       color: '#36b395',
       padding: 10,
       fontWeight: 'bold',
     },
+
+    btnLoginFacebook: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    btnLoginFacebookText: {
+      fontSize: 10,
+      color: '#000',
+    },
+    btnLoginGoogleText: {
+      fontSize: 10,
+      color: '#000',
+
+    }
   });
