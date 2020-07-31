@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     background: {
       flex: 1,
-      backgroundColor: '#FFF',
+      backgroundColor: '#36b395',
     },
     containerLogo: {
         flex: 1,
@@ -18,20 +18,24 @@ export default StyleSheet.create({
     input: {
       // backgroundColor: 'black',
       width: '90%',
+      height: '15%',
       marginBottom: 15,
       color: '#242940',
-      fontSize: 17,
+      fontSize: 15,
       borderRadius: 7,
-      padding: 12,
-      borderWidth: 2,
-      borderColor: '#36b395'      
+      // padding: 12,
+      // borderWidth: 2,
+      borderColor: '#36b395',
+      backgroundColor: '#FFF',    
     },
     btnSubmit: {
       backgroundColor: '#36b395',//'#00c4cc','#242940',
       width: '40%',
-      height: 45,
+      height: '10%',
       alignItems: 'center',
       justifyContent: 'center',
+      borderWidth: 1,
+      borderColor: '#FFF',
       borderRadius: 7,
       padding: 20,
       marginTop: 5,
@@ -42,25 +46,51 @@ export default StyleSheet.create({
       //fontWeight: 'bold'
     },
     btnRegister: {
-      marginTop: 10,
+      padding: 5,
     },
     btnRegisterText: {
       color: '#36b395',
       padding: 10,
       fontWeight: 'bold',
     },
-
-    btnLoginFacebook: {
+    loginByAnotherWayContainer: {
+      width: '80%',
+      height: '13%',
       flexDirection: 'row',
+      // backgroundColor: '#000',
+      justifyContent: 'space-between',
+    },
+    btnLoginByFacebook: {
+      flex: 1,
+      flexDirection: 'row',
+      backgroundColor: '#3b5998',
       alignItems: 'center',
+      justifyContent: 'space-evenly',
+      // borderRadius: 10,
+      // padding: 12,
+      // width: '100%'
     },
-    btnLoginFacebookText: {
+    btnLoginByFacebookText: {
+      fontSize: 10,
+      color: '#FFF',
+      marginRight: 5,
+    },
+    btnLoginByGoogle: {
+      flex: 1,
+      flexDirection: 'row',
+      backgroundColor: '#FFF',
+      alignItems: 'center',
+      justifyContent: 'space-evenly',
+      // padding: 12,
+      // borderWidth: 1,
+      // borderColor: '#cccccc',
+      // borderRadius: 10
+      // width: '100%'
+    },
+    btnLoginByGoogleText: {
       fontSize: 10,
       color: '#000',
+      marginRight: 5,
     },
-    btnLoginGoogleText: {
-      fontSize: 10,
-      color: '#000',
 
-    }
   });

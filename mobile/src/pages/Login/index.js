@@ -13,6 +13,9 @@ import {
 } from 'react-native';
 
 import styles from './styles';
+import logoImage from '../../assets/logo3-verde.jpg'
+import facebookImage from '../../assets/logo_facebook.png';
+import googleImage from '../../assets/logo_google.jpg';
 
 export default function Login() {
 
@@ -78,12 +81,12 @@ export default function Login() {
 
   console.disableYellowBox = true
   return (
-    <KeyboardAvoidingView style={styles.background}>
-      <StatusBar barStyle='dark-content' backgroundColor="#FFF" />
+    <KeyboardAvoidingView style={styles.background} behavior='height'>
+      <StatusBar barStyle='dark-content' backgroundColor="#36b395" />
       <View style={styles.containerLogo}>
         <Animated.Image
           style={{ width: logo.x, height: logo.y}}
-          source={require('../../assets/logo3.jpg')}
+          source={logoImage}
         />
 
       </View>
@@ -128,24 +131,23 @@ export default function Login() {
         >
             <Text style={styles.btnRegisterText}>Criar conta</Text>
         </TouchableOpacity>
-        
-        <TouchableOpacity 
-          style={styles.btnLoginFacebook}
-          onPress={() => {}}  
-        >
-          <Text style={styles.btnLoginFacebookText}>Conecte-se com o Facebook</Text>
-        </TouchableOpacity>
 
-        <TouchableOpacity 
-          style={styles.btnLoginGoogle}
-          onPress={() => {}}>
-          <Text style={styles.btnLoginGoogleText}>Conecte-se com o Google</Text>
-        </TouchableOpacity>
+        <View style={styles.loginByAnotherWayContainer}>
+          <TouchableOpacity 
+            style={styles.btnLoginByFacebook}
+            onPress={() => {}}  
+          >
+            <Image source={facebookImage} style={{width: '20%', height: '35%'}}/>
+            <Text style={styles.btnLoginByFacebookText}>Entrar com o Facebook</Text>
+          </TouchableOpacity>
 
-
-     
-        
-            
+          <TouchableOpacity 
+            style={styles.btnLoginByGoogle}
+            onPress={() => {}}>
+            <Image source={googleImage} style={{width: '20%', height: '35%'}}/>
+            <Text style={styles.btnLoginByGoogleText}> Entrar com o Google</Text>
+          </TouchableOpacity>
+        </View>
 
       </Animated.View>
 
