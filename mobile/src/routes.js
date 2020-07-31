@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import Login from './pages/Login';
-import Register from './pages/Register/' 
+import Login from './pages/Login/';
+import Register from './pages/Register/'; 
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -19,8 +19,6 @@ export default function Routes() {
                     options={{
                         headerShown: false
                     }}
-                    
-        
                 />
 
             <AppStack.Screen
@@ -29,8 +27,6 @@ export default function Routes() {
                     options={{
                         headerShown: false
                     }}
-                    
-        
                 />  
             </AppStack.Navigator>
 

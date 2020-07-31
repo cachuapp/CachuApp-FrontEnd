@@ -49,7 +49,7 @@ export default StyleSheet.create({
       padding: 5,
     },
     btnRegisterText: {
-      color: '#36b395',
+      color: '#FFF',
       padding: 10,
       fontWeight: 'bold',
     },

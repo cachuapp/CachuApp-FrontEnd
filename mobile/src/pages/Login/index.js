@@ -17,6 +17,8 @@ import logoImage from '../../assets/logo3-verde.jpg'
 import facebookImage from '../../assets/logo_facebook.png';
 import googleImage from '../../assets/logo_google.jpg';
 
+import { useNavigation } from '@react-navigation/native';
+
 export default function Login() {
 
 //   Pegando a largura e altura da tela do usuário
@@ -79,6 +81,13 @@ export default function Login() {
     ]).start(); 
   }
 
+  const navigation = useNavigation();
+
+  function navigateTo(page) {
+    navigation.navigate(page);
+  }
+
+
   console.disableYellowBox = true
   return (
     <KeyboardAvoidingView style={styles.background} behavior='height'>
@@ -127,7 +136,7 @@ export default function Login() {
 
         <TouchableOpacity
           style={styles.btnRegister}
-          onPress={() => {}}
+          onPress={() => navigateTo('Register')}
         >
             <Text style={styles.btnRegisterText}>Criar conta</Text>
         </TouchableOpacity>
